@@ -1,0 +1,185 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+
+body {
+	margin-top: 4.5rem;
+	/* background-color: red; */
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.btn {
+	display: inline-block;
+	padding: .6em 1.2em;
+	background-color: #0061ff;
+	color: #fff;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background-color: #3b85ff;
+	text-decoration: none;
+}
+
+.header-main {
+	padding: 0 2rem;
+	height: 4.5rem;
+	border-bottom: 1px solid #ccc;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.nav-main {
+	width: 100%;
+	padding-top: 10px;
+	line-height: calc(4.5rem - 20px);
+	min-width: 1080px;
+}
+
+.nav-main ul {
+	list-style: none;
+}
+
+.nav-main li {
+	display: inline-block;
+}
+
+.nav-main .nav-left {
+	float: left;
+}
+
+.nav-main .nav-right {
+	float: right;
+}
+
+.nav-main li {
+	margin: 0 1rem;
+}
+
+.nav-main .nav-left li:first-child {
+	margin-left: 0;
+}
+
+.nav-main .nav-right li:last-child {
+	margin-right: 0;
+}
+
+.nav-main a {
+	display: inline-block;
+}
+
+.nav-main a:hover {
+	border-bottom: 10px solid black;
+}
+
+.nav-main .logo {
+	vertical-align: middle;
+}
+
+.nav-main .btn {
+	display: inline;
+}
+
+.nav-main .logo-link:hover,
+.nav-main .btn:hover {
+	border-bottom: none;
+}
+
+/* section responsive squares */
+
+.boxes {
+	height: 30vw;
+}
+
+.boxes .squares {
+	float: left;
+	width: 30vw;
+	height: 100%;
+	background-color: coral;
+}
+
+.boxes .central {
+	width: calc(100% - 60vw);
+	height: 100%;
+	float: left;
+	background-color: green;
+}
+
+.boxes .square {
+	float: left;
+	/* position: relative; */
+	width: 50%;
+	height: 50%;
+	border: 1rem solid lightseagreen;
+	padding: 1rem;
+}
+
+.boxes .central {
+	overflow-y: auto;
+}
+
+.boxes .img-uni {
+	filter: invert();
+	width: 100%;
+	height: 100%;
+	/*
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	*/
+	object-fit: contain;
+	object-position: center;
+}
+
+/* section faq */
+
+.faq {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.faq .faq-item {
+	cursor: pointer;
+}
+
+.faq .question::after {
+	content: "\f078";
+	font-family: "Font Awesome 5 Free";
+}
+
+.faq .answer {
+	display: none;
+}
+
+.faq .faq-item:hover .answer {
+	display: block;
+}
+
+.faq .faq-item:hover .question::after {
+	content: "\f077";
+}
